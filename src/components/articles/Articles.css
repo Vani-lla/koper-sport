@@ -1,0 +1,11 @@
+.articles {
+   position: absolute;
+   top: 850px;
+   width: 70vw;
+   margin: auto;
+   left: 0; right: 0;
+}
+
+.article {
+   min-height: 200px;
+}
