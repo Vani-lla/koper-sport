@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/koper-sport/static/css/main.12d9959f.chunk.css",
-    "main.js": "/koper-sport/static/js/main.f3c6e274.chunk.js",
-    "main.js.map": "/koper-sport/static/js/main.f3c6e274.chunk.js.map",
+    "main.js": "/koper-sport/static/js/main.650c617a.chunk.js",
+    "main.js.map": "/koper-sport/static/js/main.650c617a.chunk.js.map",
     "runtime-main.js": "/koper-sport/static/js/runtime-main.bb283088.js",
     "runtime-main.js.map": "/koper-sport/static/js/runtime-main.bb283088.js.map",
     "static/js/2.570e7037.chunk.js": "/koper-sport/static/js/2.570e7037.chunk.js",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.bb283088.js",
     "static/js/2.570e7037.chunk.js",
     "static/css/main.12d9959f.chunk.css",
-    "static/js/main.f3c6e274.chunk.js"
+    "static/js/main.650c617a.chunk.js"
   ]
 }
