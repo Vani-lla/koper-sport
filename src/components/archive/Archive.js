@@ -11,4 +11,8 @@ export default class Archive extends Component {
    componentDidMount() {
       document.getElementById('ar').className = "nav-sub active"
    }
+
+   componentWillUnmount() {
+      document.getElementById('ar').className = "nav-sub"
+   }
 }

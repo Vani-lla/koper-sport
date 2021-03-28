@@ -40,6 +40,9 @@ export default class Slider extends Component {
    componentDidMount() {
       document.getElementById('ak').className = "nav-sub active"
    }
+   componentWillUnmount() {
+      document.getElementById('ak').className = "nav-sub"
+   }
 
    render() {
       return (

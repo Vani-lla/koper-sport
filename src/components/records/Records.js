@@ -12,6 +12,9 @@ export default class Records extends Component {
    componentDidMount() {
       document.getElementById('rc').className = "nav-sub active"
    }
+   componentWillUnmount() {
+      document.getElementById('rc').className = "nav-sub"
+   }
 
    render() {
       if (this.state.active) {

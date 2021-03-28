@@ -5,7 +5,7 @@ import Navigation from './components/navigation/Navigation';
 import Articles from './components/articles/Articles';
 import Records from './components/records/Records';
 import Archive from './components/archive/Archive';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
    return (

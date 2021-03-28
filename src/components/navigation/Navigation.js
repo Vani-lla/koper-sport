@@ -17,9 +17,9 @@ export default function Navigation() {
             </div>
 
             <div className="nav-subpages">
-               <a href="/" id="ak" className="nav-sub">Aktualności</a>
-               <a href="/records" id="rc" className="nav-sub">Rekordy</a>
-               <a href="/archive" id="ar" className="nav-sub">Archiwum</a>
+               <a href="/#" id="ak" className="nav-sub">Aktualności</a>
+               <a href="/#/records" id="rc" className="nav-sub">Rekordy</a>
+               <a href="/#/archive" id="ar" className="nav-sub">Archiwum</a>
             </div>
 
          </div>
