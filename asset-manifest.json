@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/koper-sport/static/css/main.12d9959f.chunk.css",
-    "main.js": "/koper-sport/static/js/main.b985106f.chunk.js",
-    "main.js.map": "/koper-sport/static/js/main.b985106f.chunk.js.map",
+    "main.js": "/koper-sport/static/js/main.f3c6e274.chunk.js",
+    "main.js.map": "/koper-sport/static/js/main.f3c6e274.chunk.js.map",
     "runtime-main.js": "/koper-sport/static/js/runtime-main.bb283088.js",
     "runtime-main.js.map": "/koper-sport/static/js/runtime-main.bb283088.js.map",
-    "static/js/2.e771ce24.chunk.js": "/koper-sport/static/js/2.e771ce24.chunk.js",
-    "static/js/2.e771ce24.chunk.js.map": "/koper-sport/static/js/2.e771ce24.chunk.js.map",
+    "static/js/2.570e7037.chunk.js": "/koper-sport/static/js/2.570e7037.chunk.js",
+    "static/js/2.570e7037.chunk.js.map": "/koper-sport/static/js/2.570e7037.chunk.js.map",
     "index.html": "/koper-sport/index.html",
     "static/css/main.12d9959f.chunk.css.map": "/koper-sport/static/css/main.12d9959f.chunk.css.map",
-    "static/js/2.e771ce24.chunk.js.LICENSE.txt": "/koper-sport/static/js/2.e771ce24.chunk.js.LICENSE.txt",
+    "static/js/2.570e7037.chunk.js.LICENSE.txt": "/koper-sport/static/js/2.570e7037.chunk.js.LICENSE.txt",
     "static/media/i_logo.aa133b4a.png": "/koper-sport/static/media/i_logo.aa133b4a.png",
     "static/media/k1.9c1275db.jpg": "/koper-sport/static/media/k1.9c1275db.jpg",
     "static/media/k2.895d753f.jpg": "/koper-sport/static/media/k2.895d753f.jpg",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bb283088.js",
-    "static/js/2.e771ce24.chunk.js",
+    "static/js/2.570e7037.chunk.js",
     "static/css/main.12d9959f.chunk.css",
-    "static/js/main.b985106f.chunk.js"
+    "static/js/main.f3c6e274.chunk.js"
   ]
 }
