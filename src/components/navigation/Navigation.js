@@ -3,8 +3,6 @@ import './Navigation.css';
 import logo from '../../static/logo.png';
 import f_logo from '../../static/f_logo.png';
 import i_logo from '../../static/i_logo.png';
-import m_logo from '../../static/m_logo.png';
-import s_logo from '../../static/s_logo.png';
 
 export default function Navigation() {
    return (
@@ -19,7 +17,9 @@ export default function Navigation() {
             </div>
 
             <div className="nav-subpages">
-               <a href="/records" className="nav-sub">Rekordy</a>
+               <a href="/" id="ak" className="nav-sub">Aktualności</a>
+               <a href="/records" id="rc" className="nav-sub">Rekordy</a>
+               <a href="/archive" id="ar" className="nav-sub">Archiwum</a>
             </div>
 
          </div>

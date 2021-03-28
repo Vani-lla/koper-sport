@@ -36,11 +36,14 @@ nav {
 }
 
 .nav-subpages {
-   margin-left: 25vw;
+   position: absolute;
+   right: 15vw;
+   width: 40vw;
    padding-bottom: 5px;
-   cursor: pointer;
    color: #d5ecd4;
    font-size: 40px;
+   display: flex;
+   justify-content: space-between;
 }
 
 .nav-sub {
@@ -48,7 +51,12 @@ nav {
    text-decoration: none;
 }
 
+.active {
+   transform: scale(1.15);
+   color: #F6F930;
+}
+
 .nav-sub:hover {
-   transform: scale(1.2);
+   transform: scale(1.15);
    color: #F6F930;
 }

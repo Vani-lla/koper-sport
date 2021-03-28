@@ -1,24 +1,28 @@
 .slider {
    position: absolute;
-   top: 25vh;
+   top: 200px;
    left: 0; right: 0;
+   width: 70%;
    margin: auto;
-   width: fit-content;
-   height: 500px;
-   overflow-y: hidden;
-   display: flex;
-   flex-direction: column;
 }
 
 .image {
-   width: 800px;
+   position: absolute;
+
+   width: 600px; height: 400px;
+   transition: all .4s;
 }
 
-.animated {
-   transition: all 2s ease;
-}
- 
-.slide {
+.disactive {
    opacity: 0;
-   transition-duration: 1s ease;
+}
+
+.description {
+   margin-left: 650px;
+   font-size: 20px;
+   height: fit-content;
+}
+
+.description h1 {
+   text-align: left;
 }

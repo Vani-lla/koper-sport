@@ -15,7 +15,7 @@ export default class Articles extends Component {
       };
       this.getData();
 
-      this.getText(1000215);
+      // this.getText(1000215);
    }
 
    async getData() {
@@ -36,9 +36,13 @@ export default class Articles extends Component {
       return (
          <div key={id} className="article">
             <h1>{title}</h1>
-            <p>
-               Aisaretai!
-            </p>
+            <div className="article-content">
+               <img src={`http://kopernik.netus.pl/podstrony/page${id}/glow.jpg`} alt="ID, które otrzymuję w requeście nie zgadza się z ID tych artykułów. To dlatego większości zdjęć nie ma, a reszta się nie zgadza. Tak samo jest z tytułami, których nie ma w ogóle. Do tych plików tekstowych nie mogę się dostać, bo headery blokują fetch'a"/>
+               <p>
+                  Aliquam sit amet orci tellus. Nunc suscipit sodales facilisis. Cras nibh est, tristique a porttitor consequat, cursus quis magna. Curabitur id lorem ac nisl congue auctor vel sed dolor. Vestibulum vel lacinia sem, nec ornare odio. Sed malesuada varius tortor et viverra. Cras nec posuere justo, ut rutrum odio. Vestibulum quis gravida metus. Curabitur sit amet felis lectus.
+               </p>
+            </div>
+
          </div>
       )
    }

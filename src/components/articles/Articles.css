@@ -1,6 +1,6 @@
 .articles {
    position: absolute;
-   top: 850px;
+   top: 800px;
    width: 70vw;
    margin: auto;
    left: 0; right: 0;
@@ -8,4 +8,20 @@
 
 .article {
    min-height: 200px;
+   margin-bottom: 50px;
+}
+
+.article p {
+   font-size: 22px;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+
+.article img {
+   max-width: 200px;
+}
+
+.article-content {
+   display: flex;
+   margin-top: 10px;
 }

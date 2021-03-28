@@ -9,6 +9,10 @@ export default class Records extends Component {
       };
    }
 
+   componentDidMount() {
+      document.getElementById('rc').className = "nav-sub active"
+   }
+
    render() {
       if (this.state.active) {
          return (
