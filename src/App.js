@@ -4,8 +4,7 @@ import Slider from './components/slider/Slider';
 import Navigation from './components/navigation/Navigation';
 import Articles from './components/articles/Articles';
 import Records from './components/records/Records';
-import Archive from './components/archive/Archive';
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
    return (
@@ -20,10 +19,6 @@ function App() {
 
                <Route path="/records" exact>
                   <Records />
-               </Route>
-
-               <Route path="/archive" exact>
-                  <Archive />
                </Route>
             </Switch>
          </Router>

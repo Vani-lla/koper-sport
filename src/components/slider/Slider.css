@@ -21,6 +21,8 @@
    margin-left: 650px;
    font-size: 20px;
    height: fit-content;
+   position: absolute;
+   margin-top: auto; margin-bottom: auto;
 }
 
 .description h1 {

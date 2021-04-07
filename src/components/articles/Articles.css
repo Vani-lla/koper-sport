@@ -1,25 +1,25 @@
 .articles {
    position: absolute;
    top: 800px;
-   width: 70vw;
+   width: 70%;
    margin: auto;
    left: 0; right: 0;
 }
 
 .article {
-   min-height: 200px;
    margin-bottom: 50px;
 }
 
 .article p {
+   min-height: 200px;
    font-size: 22px;
    margin-left: 20px;
    margin-top: 10px;
 }
 
-.article img {
-   max-width: 200px;
-}
+/* .article img {
+   max-width: 1000px;
+} */
 
 .article-content {
    display: flex;

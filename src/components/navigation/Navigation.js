@@ -12,14 +12,17 @@ export default function Navigation() {
             <div className="nav-icons">
                <a href="https://www.facebook.com/kopercieszyn">
                   <img src={f_logo} alt="f" className="nav-facebook" /></a>
-               <a href="https://www.instagram.com/p/CASQzO7JiRw/">
+               <a href="https://www.instagram.com/lo_koper/">
                   <img src={i_logo} alt="i" className="nav-instagram"/></a>
             </div>
 
             <div className="nav-subpages">
-               <a href="/#" id="ak" className="nav-sub">Aktualności</a>
-               <a href="/#/records" id="rc" className="nav-sub">Rekordy</a>
-               <a href="/#/archive" id="ar" className="nav-sub">Archiwum</a>
+               <a href="/" id="ak" className="nav-sub">Aktualności</a>
+               <a href="/records" id="rc" className="nav-sub">Rekordy</a>
+            </div>
+
+            <div className="nav-options">
+
             </div>
 
          </div>

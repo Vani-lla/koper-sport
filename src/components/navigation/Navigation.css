@@ -37,11 +37,11 @@ nav {
 
 .nav-subpages {
    position: absolute;
-   right: 15vw;
-   width: 40vw;
+   right: 20vw;
+   width: 25vw;
    padding-bottom: 5px;
    color: #d5ecd4;
-   font-size: 40px;
+   font-size: 34px;
    display: flex;
    justify-content: space-between;
 }
