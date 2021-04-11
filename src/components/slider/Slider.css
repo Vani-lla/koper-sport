@@ -19,10 +19,12 @@
 
 .description {
    margin-left: 650px;
-   font-size: 20px;
+   font-size: 22px;
    height: fit-content;
    position: absolute;
    margin-top: auto; margin-bottom: auto;
+
+   transition: font-size .4s;
 }
 
 .description h1 {

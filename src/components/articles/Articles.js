@@ -18,9 +18,6 @@ export default class Articles extends Component {
 
    async getData() {
       let data = (await api.get('/Api/artykul.php')).data;
-      data = data.filter((article) => {
-         return article.kategoria === 'sport';
-      })
       this.setState({ data: data });
       this.setState({ loading: false });
       console.log(this.state.data);
@@ -30,17 +27,20 @@ export default class Articles extends Component {
       fetch(`http://kopernik.netus.pl/podstrony/page${id}/dane.txt`).then(x => console.log(x.text()))
    }
 
+   htmlTags(text) {
+      return text.replace( /(<([^>]+)>)/ig, '');
+   }
+
    article(title, id, content) {
       return (
          <div key={id} className="article">
             <h1>{title}</h1>
             <div className="article-content">
                <img src={`http://kopernik.netus.pl/podstrony/page${(parseInt(id)+200).toString()}/glow.jpg`} alt="article image"/>
-               <p>
-                  {content}
-               </p>
+               <div className="article-content-p">
+                  {this.htmlTags(content)}
+               </div>
             </div>
-
          </div>
       )
    }

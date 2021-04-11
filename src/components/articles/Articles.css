@@ -10,16 +10,16 @@
    margin-bottom: 50px;
 }
 
-.article p {
-   min-height: 200px;
-   font-size: 22px;
+.article-content-p {
+   /* min-height: 200px; */
+   font-size: 24px;
    margin-left: 20px;
    margin-top: 10px;
 }
 
-/* .article img {
-   max-width: 1000px;
-} */
+.article img {
+   height: 100%;
+}
 
 .article-content {
    display: flex;

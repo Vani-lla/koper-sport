@@ -60,3 +60,18 @@ nav {
    transform: scale(1.15);
    color: #F6F930;
 }
+
+.nav-options {
+   position: absolute;
+   right: 5vw;
+}
+
+.nav-options button {
+   background: none;
+   border: none;
+   font-size: 20px;
+
+   width: 30px;
+   margin: 5px;
+   cursor: pointer;
+}
