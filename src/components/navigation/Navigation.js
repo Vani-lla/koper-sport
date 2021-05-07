@@ -3,6 +3,7 @@ import './Navigation.css';
 import logo from '../../static/logo.png';
 import f_logo from '../../static/f_logo.png';
 import i_logo from '../../static/i_logo.png';
+import contrast_logo from '../../static/contrast.png';
 
 export default function Navigation() {
    const navFS = 34;
@@ -39,6 +40,7 @@ export default function Navigation() {
          document.body.style.background = "linear-gradient(90deg, rgba(46,89,96,1) 0%, rgba(79,151,163,1) 25%, rgba(79,151,163,1) 75%, rgba(46,89,96,1) 100%)"
       }
    }
+   
    contrastChange()
 
    return (
@@ -61,7 +63,7 @@ export default function Navigation() {
                <button onClick={() => fontSizeChange(1)}   className="font-size-1">A</button>
                <button onClick={() => fontSizeChange(1.2)} className="font-size-2">A+</button>
                <button onClick={() => fontSizeChange(1.5)} className="font-size-3">A++</button>
-               <button onClick={contrastChange}            className="contrast-switch">\f042</button>
+               <button id="contrast-change" onClick={contrastChange} className="contrast-switch"></button>
             </div>
          </div>
       </nav>

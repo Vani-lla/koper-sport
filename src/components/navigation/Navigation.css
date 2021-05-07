@@ -64,6 +64,7 @@ nav {
 .nav-options {
    position: absolute;
    right: 5vw;
+   display: flex;
 }
 
 .nav-options button {
@@ -74,4 +75,8 @@ nav {
    width: 30px;
    margin: 5px;
    cursor: pointer;
+}
+
+#contrast-change::before {
+   content: "\262F";
 }
