@@ -12,36 +12,38 @@
 .article {
    margin-bottom: 100px;
 
-   padding: 30px;
+   padding: 10px 30px;
 
    box-shadow: 0 0 10px black;
    background-color: rgba(0, 0, 0, .2);
+
+   height: fit-content;
+}
+
+.article-title {
+   font-size: 35px;
+}
+
+.article-upper {
+   display: grid;
+   grid-template-columns: 5fr 1fr;
+   grid-template-rows: 1fr;
+   align-items: center;
+   padding: 20px 0;
 }
 
 .article-content-p {
+   grid-column: 2;
    font-size: 24px;
-   margin-left: 20px;
-   margin-top: 10px;
 }
 
 .article img {
-   height: 100%;
    float: left;
    margin-right: 20px;
 }
 
-.article-content {
-   margin-top: 10px;
-}
-
 .article-content h2 {
    font-size: 28px;
-   margin-top: 7px; margin-bottom: 7px;
+   margin-top: 20px; margin-bottom: 20px;
 }
 
-.article-date {
-   position: absolute;
-   right: 10%;
-   margin-top: 50px;
-   font-size: 21px;
-}

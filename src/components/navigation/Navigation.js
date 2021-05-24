@@ -9,6 +9,7 @@ export default function Navigation() {
    const navFS = 34;
    const dscFS = 22;
    const artFS = 23;
+   const arttFS= 35;
    const recFS = 30;
 
    let contrast = true;
@@ -25,6 +26,10 @@ export default function Navigation() {
       elements = []; items = document.getElementsByClassName('article-content-p');
       for (let i=0; i<items.length; i++) { elements.push(items[i]) }
       elements.forEach((item, ind) =>    { item.style.fontSize = `${artFS*m}px` })
+      
+      elements = []; items = document.getElementsByClassName('article-title');
+      for (let i=0; i<items.length; i++) { elements.push(items[i]) }
+      elements.forEach((item, ind) =>    { item.style.fontSize = `${arttFS*m}px` })
       
       elements = []; items = document.getElementsByClassName('records');
       for (let i=0; i<items.length; i++) { elements.push(items[i]) }
