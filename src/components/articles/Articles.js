@@ -75,12 +75,19 @@ export default class Articles extends Component {
             </div>
 
             <div className="article-content">
-               <img src={`http://kopernik.netus.pl/podstrony/page${(parseInt(id)+200).toString()}/glow.jpg`} alt="article image" id={`article-img-${id}`}
-                  onError={console.log(`article-img-${id}`)}
-               />
+               <img src={`http://kopernik.netus.pl/podstrony/page${(parseInt(id)+200).toString()}/glow.jpg`} alt="article image" id={`article-img-${id}`} />
                <div className="article-content-p" dangerouslySetInnerHTML={{ __html: content }} />
             </div>
 
+         </div>
+      )
+   }
+
+   imageShow(id) {
+      
+      return (
+         <div>
+           <img></img>
          </div>
       )
    }
@@ -89,6 +96,7 @@ export default class Articles extends Component {
       if (!this.state.loading) {
          return (
             <div className="articles">
+               {this.imageShow(1000301)}
                {this.state.data.map((art, ind) => {
                   if (ind < this.state.articleCount) {
                      return this.article(art.tytul, art.id, art.tresc, art.data);
