@@ -15,12 +15,12 @@
    margin-bottom: 10px;
 }
 
-.btn {
+.swap-btn {
    transition: all .2s;
    cursor: pointer;
 }
 
-.btn:hover {
+.swap-btn:hover {
    transform: scale(1.05);
    text-shadow: #F6F930 0 0 2px;
 }
@@ -34,8 +34,6 @@
    color: black;
    padding: 15px;
    font-weight: 700;
-
-   
 }
 
 .row-1 {
@@ -44,4 +42,32 @@
 
 .row-2 {
    background-color: #FAD8D6;
+}
+
+.swap {
+   display: grid;
+   grid-template-columns: 1fr 3fr 1fr;
+}
+
+.swap-btn {
+   width: 50px;
+   background-color: transparent;
+   border: none;
+   color: black;
+   font-size: 40px;
+   font-weight: 900;
+
+   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+   .records {
+      font-size: 20px;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .records {
+      font-size: 16px;
+   }
 }

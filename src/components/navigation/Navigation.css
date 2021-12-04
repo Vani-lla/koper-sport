@@ -51,7 +51,9 @@ nav {
    text-decoration: none;
 }
 
-.active {
+.nav-sub-active {
+   transition: all .5s;
+   text-decoration: none;
    transform: scale(1.15);
    color: #F6F930;
 }
@@ -78,5 +80,40 @@ nav {
 }
 
 #contrast-change::before {
-   content: "\262F";
+   content: "\25D0";
+}
+
+@media only screen and (max-width: 1350px) {
+   .nav-subpages {
+      position: absolute;
+      width: 30vw;
+      right: 25vw;
+   }
+}
+
+@media only screen and (max-width: 1000px) {
+   .nav-sub-active {
+      display: none;
+   }
+
+   .nav-subpages {
+      justify-content: center;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+   .nav-subpages {
+      justify-content: center;
+      right: 13vw;
+   }
+   .nav-options {
+      display: none;
+   }
+}
+
+
+@media only screen and (max-width: 550px) {
+   .nav-subpages {
+      display: none;
+   }
 }

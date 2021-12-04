@@ -5,12 +5,12 @@ export default class Records extends Component {
    constructor(props) {
       super(props);
       this.state = {
-         active: Math.random() < 0.5
+         active: true
       };
    }
 
    componentDidMount() {
-      document.getElementById('rc').className = "nav-sub active"
+      document.getElementById('rc').className = "nav-sub-active"
    }
    componentWillUnmount() {
       document.getElementById('rc').className = "nav-sub"
@@ -21,7 +21,11 @@ export default class Records extends Component {
          return (
             <div className="records la">
                <h1 className="column-title">Chłopcy</h1>
-               <h1 className="column-title btn" onClick={() => {this.setState({ active: !this.state.active })}}>Lekkoatletyka</h1>
+               <div className="swap">
+                  <button className="swap-btn" onClick={() => {this.setState({ active: !this.state.active })}}>←</button>
+                  <h1 className="column-title">Lekkoatletyka</h1>
+                  <button className="swap-btn" onClick={() => {this.setState({ active: !this.state.active })}}>→</button>
+               </div>
                <h1 className="column-title">Dziewczyny</h1>
 
                <div className="record row-1">11,2s M.Walica 1988</div>
@@ -65,7 +69,11 @@ export default class Records extends Component {
          return (
             <div className="records sw">
                <h1 className="column-title">Chłopcy</h1>
-               <h1 className="column-title btn" onClick={() => {this.setState({ active: !this.state.active })}}>Pływanie</h1>
+               <div className="swap">
+                  <button className="swap-btn" onClick={() => {this.setState({ active: !this.state.active })}}>←</button>
+                  <h1 className="column-title">Pływanie</h1>
+                  <button className="swap-btn" onClick={() => {this.setState({ active: !this.state.active })}}>→</button>
+               </div>
                <h1 className="column-title">Dziewczyny</h1>
 
                <div className="record row-1">25,15s M.Głowa 1996</div>

@@ -15,7 +15,7 @@ export default function Navigation() {
    let contrast = true;
 
    const fontSizeChange = (m) => {
-      let elements = []; let items = document.getElementsByClassName('nav-sub');
+      let elements = []; let items = document.getElementsByClassName('nav-subpages');
       for (let i=0; i<items.length; i++) { elements.push(items[i]) }
       elements.forEach((item, ind) =>    { item.style.fontSize = `${navFS*m}px` })
       
@@ -38,6 +38,16 @@ export default function Navigation() {
 
    const contrastChange = () => {
       contrast = !contrast;
+      
+      if (!contrast) {
+         let elements = []; let items = document.getElementsByClassName('column-title');
+         for (let i=0; i<items.length; i++) { elements.push(items[i]) }
+         elements.forEach((item, ind) =>    { item.style.color = 'black' })
+      } else {
+         let elements = []; let items = document.getElementsByClassName('column-title');
+         for (let i=0; i<items.length; i++) { elements.push(items[i]) }
+         elements.forEach((item, ind) =>    { item.style.color = 'white' })
+      }
 
       if (contrast) {
          document.body.style.background = 'black';
