@@ -7,13 +7,14 @@ import Records from './components/records/Records';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+   window.onerror = (message, url, lineNumber) => {console.log('x');return true}
    return (
       <Fragment>
          <Navigation />
          <Router>
             <Switch>
                <Route path="/" exact>
-                  <Slider />
+                  {/* <Slider /> */}
                   <Articles />
                </Route>
 
