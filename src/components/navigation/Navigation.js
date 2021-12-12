@@ -6,7 +6,7 @@ import i_logo from '../../static/i_logo.png';
 import contrast_logo from '../../static/contrast.png';
 
 export default function Navigation() {
-   const navFS = 34;
+   const navFS = 28;
    const dscFS = 22;
    const artFS = 23;
    const arttFS= 35;
@@ -60,26 +60,28 @@ export default function Navigation() {
 
    return (
       <nav>
-         <a href="http://www.kopernik.netus.pl/"><img src={logo} className="main-logo" alt="main-logo" /></a>
-         <div className="nav-links">
-            <div className="nav-icons">
-               <a href="https://www.facebook.com/kopercieszyn">
-                  <img src={f_logo} alt="f" className="nav-facebook" /></a>
-               <a href="https://www.instagram.com/lo_koper/">
-                  <img src={i_logo} alt="i" className="nav-instagram"/></a>
-            </div>
+         {/* <a href="http://www.kopernik.netus.pl/"><img src={logo} className="main-logo" alt="main-logo" /></a> */}
+         <div className="nav-icons">
+            <a href="https://www.facebook.com/kopercieszyn">
+               <img src={f_logo} alt="f" className="nav-facebook" /></a>
+            <a href="https://www.instagram.com/lo_koper/">
+               <img src={i_logo} alt="i" className="nav-instagram"/></a>
+         </div>
 
-            <div className="nav-subpages">
-               <a href="/" id="ak" className="nav-sub">Aktualności</a>
-               <a href="/records" id="rc" className="nav-sub">Rekordy</a>
-            </div>
+         <div className="lo-text"> 
+            Sport w II LO <br/> im. M. Kopernika
+         </div>
 
-            <div className="nav-options">
-               <button onClick={() => fontSizeChange(1)}   className="font-size-1">A</button>
-               <button onClick={() => fontSizeChange(1.2)} className="font-size-2">A+</button>
-               <button onClick={() => fontSizeChange(1.5)} className="font-size-3">A++</button>
-               <button id="contrast-change" onClick={contrastChange} className="contrast-switch"></button>
-            </div>
+         <div className="nav-subpages">
+            <a href="/" id="ak" className="nav-sub">Aktualności</a>
+            <a href="/records" id="rc" className="nav-sub">Rekordy</a>
+         </div>
+
+         <div className="nav-options">
+            <button onClick={() => fontSizeChange(1)}   className="font-size-1">A</button>
+            <button onClick={() => fontSizeChange(1.2)} className="font-size-2">A+</button>
+            <button onClick={() => fontSizeChange(1.5)} className="font-size-3">A++</button>
+            <button id="contrast-change" onClick={contrastChange} className="contrast-switch"></button>
          </div>
       </nav>
    )
